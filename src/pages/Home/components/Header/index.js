@@ -1,7 +1,11 @@
 import React from 'react'
-import { Button, Toolbar, AppBar, SvgIcon, Avatar } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
-import { Bell } from 'react-feather'
+import { Button, Toolbar, AppBar, Box} from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles'
+
+import WritePost from './WritePost';
+import Notifications from './Notifications';
+import Account from './Account';
+
 const useStyles = makeStyles({
     appBar: {
         boxShadow: 'none',
@@ -15,12 +19,6 @@ const useStyles = makeStyles({
     userSection: {
         display: 'flex',
         alignItems: 'center'
-    },
-    button: {
-        marginRight: 10
-    },
-    bell: {
-        marginRight: 10
     }
 })
 
@@ -29,16 +27,16 @@ function Header() {
     return (
         <AppBar color="inherit" className={classes.appBar}>
             <Toolbar>
-                <img src="/images/logo.png" alt="logo" className={classes.img}/>
+                <img src="/images/logo.png" alt="logo" className={classes.img} />
                 <div className={classes.grow}></div>
                 <div className={classes.userSection}>
-                    <Button variant="contained" color="primary" className={classes.button}>
-                        NovoPost
-                    </Button>
-                    <SvgIcon className={classes.bell}>
-                        <Bell></Bell>
-                    </SvgIcon>
-                    <Avatar alt="Felipe Jhordan" src="/" />
+                    <WritePost />
+                    <Box ml={2}> 
+                        <Notifications />
+                    </Box>
+                    <Box ml={2}>
+                        <Account />
+                    </Box>
                 </div>
                 {/* <div>
                     <a href="/">Conecta Dev</a>

@@ -1,6 +1,4 @@
 import { createTheme } from "@material-ui/core";
-import { colors } from '@material-ui/core'
-
 
 import pallete from "./__pallete";
 import typography from "./__typography";

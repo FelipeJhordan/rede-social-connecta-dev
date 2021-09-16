@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 function PostCard({ post }) {
     const classes = useStyles()
     return (
-        <Card classes={classes.root}>
+        <Card className={classes.root}>
             <CardHeader 
                 avatar={<Avatar src={post.author.avatar}/>}
                 title={<Typography variant="h6">{post.title}</Typography>}
