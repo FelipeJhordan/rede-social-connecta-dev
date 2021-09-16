@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Avatar, Menu, MenuItem } from '@material-ui/core'
 import { useNavigate } from 'react-router-dom'
 
-import { signOut } from '../../../../actions/accountActions'
+import { signOut } from '../../../actions/accountActions'
 
 function Account() {
     const account = useSelector((state) => state.account)

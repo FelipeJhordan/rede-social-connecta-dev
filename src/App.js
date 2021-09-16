@@ -8,7 +8,6 @@ import GuestRoute from './routes/GuestRoutes'
 import Home from './pages/Home'
 import SignIn from './pages/SignIn'
 import theme from './theme'
-import NotFound from './pages/NotFound'
 
 import './mock'
 import store from './store';
@@ -20,9 +19,8 @@ function App() {
         <BrowserRouter>
          <Auth>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="//*" element={<Home />} />
               <GuestRoute path="/sign-in" element={<SignIn />} />
-              <Route path="/*" element={<NotFound />} />
             </Routes>
          </Auth>
         </BrowserRouter>

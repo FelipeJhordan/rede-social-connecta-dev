@@ -1,13 +1,13 @@
 import React from 'react'
-// import "./style.css"
-
-import Header from './components/Header'
-import Feed from './components/Feed';
-import NavBar from './components/NavBar';
 
 import { makeStyles } from '@material-ui/styles'
-import { Box, Container } from '@material-ui/core';
 
+import { Route, Routes } from 'react-router';
+
+import Header from './Header'
+import Feed from '../Feed';
+import NewPost from '../Post/New';
+import NotFound from '../../pages/NotFound'
 const useStyles = makeStyles({
     root: {
         display: 'flex',
@@ -15,7 +15,7 @@ const useStyles = makeStyles({
         height: '100vh'
     },
     main: {
-        height: '100vh',
+        height: 'calc(100vh - 65px)',
         padding: "24px"
     },
     toolbar: {
@@ -29,14 +29,14 @@ function Home() {
         <>
             <div className={classes.root}>
                 <Header />
-                <div className={classes.toolbar}></div>
+                <div className={classes.toolbar} />
                 <main className={classes.main}>
-                    <Container maxWidth="lg">
-                        <Box display="flex">
-                            <NavBar />
-                            <Feed />
-                        </Box>
-                    </Container>
+                  <Routes>
+                      <Route path="/" element={<Feed/>}/>
+                      <Route path="/feed" element={<Feed/>}/>
+                      <Route path="/post/new" element={<NewPost />}/>
+                      <Route path="*" element={<NotFound />} />
+                  </Routes>
                 </main>
             </div>
         </>

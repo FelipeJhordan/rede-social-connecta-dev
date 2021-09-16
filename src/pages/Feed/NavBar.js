@@ -16,12 +16,12 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const tags = [
-    { id: 1, name: "reactjs"},
-    { id: 2, name: "flutter"},
-    { id: 3, name: "react native"},
-    { id: 4, name: "kotlin"},
-    { id: 5, name: "openAI"},
-    { id: 6, name: "azure"},
+    { id: 1, name: "reactjs" },
+    { id: 2, name: "flutter" },
+    { id: 3, name: "react native" },
+    { id: 4, name: "kotlin" },
+    { id: 5, name: "openAI" },
+    { id: 6, name: "azure" },
 ]
 
 function NavBar() {
@@ -34,9 +34,9 @@ function NavBar() {
                 {
                     tags.map((tag) => {
                         return (
-                        <ListItem dense button key={`tag-${tag.id}`}>
-                            <ListItemText primary={`#${tag.name}`} />
-                        </ListItem>
+                            <ListItem dense button key={`tag-${tag.id}`}>
+                                <ListItemText primary={`#${tag.name}`} />
+                            </ListItem>
                         )
                     })
                 }

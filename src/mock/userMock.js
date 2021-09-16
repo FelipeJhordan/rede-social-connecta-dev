@@ -12,7 +12,7 @@ mock.onPost('/api/home/login').reply((config) => {
         name: 'Felipe Jhordan',
         username: 'felipejhordan',
         email: 'felipejordan.alves@gmail.com',
-        avatar: '/images/avatars/avatar_1.jpeg'
+        avatar: '/images/avatars/avatar_2.jpg'
     }
     return [200, { user }]
 })
@@ -21,9 +21,10 @@ mock.onPost('/api/home/login').reply((config) => {
 mock.onPost('/api/home/me').reply(200, {
     user: {
         'id': 1,
+        "name": 'felipe jhordan',
         'username': 'felipejhordan',
         'email': 'felipejordan.alves@gmail.com',
-        'avatar': '/images/avatars/avatar_1.jpeg'
+        'avatar': '/images/avatars/avatar_2.jpg'
 
     }
 })
