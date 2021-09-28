@@ -57,8 +57,8 @@ function Account() {
                         onClose={handleClose}
                         getContentAnchorEl={null}
                     >
-                        <MenuItem>Registrar</MenuItem>
-                        <MenuItem>Entrar</MenuItem>
+                        <MenuItem onClick={() => navigate('/sign-up')}>Registrar</MenuItem>
+                        <MenuItem onClick={() => navigate('/sign-in')}>Entrar</MenuItem>
                     </Menu>
             }
         </>

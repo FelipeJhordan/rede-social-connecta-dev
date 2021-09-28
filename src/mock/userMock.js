@@ -28,3 +28,16 @@ mock.onPost('/api/home/me').reply(200, {
 
     }
 })
+
+mock.onGet('/api/home/user/felipejhordan').reply(200, {
+    id: 1,
+    name: 'Felipe Jhordan',
+    username: 'felipejhordan',
+    email: 'felipejordan.alves@gmail.com',
+    accessToken: 'dadasdsadsada',
+    avatar: '/images/avatars/avatar_2.jpg',
+    joinedIn: '06 de janeiro, 2020',
+    work: 'Analista de sistemas',
+    totalPost: '323'
+
+})

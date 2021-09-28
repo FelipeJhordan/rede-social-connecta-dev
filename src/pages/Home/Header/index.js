@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Toolbar, AppBar, Box} from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles'
-
+import { Link } from 'react-router-dom'
 import WritePost from './WritePost';
 import Notifications from './Notifications';
 import Account from './Account';
@@ -27,7 +27,9 @@ function Header() {
     return (
         <AppBar color="inherit" className={classes.appBar}>
             <Toolbar>
-                <img src="/images/logo.png" alt="logo" className={classes.img} />
+                <Link to="/"> 
+                    <img src="/images/logo.png" alt="logo" className={classes.img} />
+                </Link>
                 <div className={classes.grow}></div>
                 <div className={classes.userSection}>
                     <WritePost />

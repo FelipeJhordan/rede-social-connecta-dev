@@ -7,6 +7,7 @@ import Auth from './components/Auth'
 import GuestRoute from './routes/GuestRoutes'
 import Home from './pages/Home'
 import SignIn from './pages/SignIn'
+import SignUp from './pages/SignUp'
 import theme from './theme'
 
 import './mock'
@@ -20,6 +21,7 @@ function App() {
          <Auth>
             <Routes>
               <Route path="//*" element={<Home />} />
+              <Route path="/sign-up" element={<SignUp />} />
               <GuestRoute path="/sign-in" element={<SignIn />} />
             </Routes>
          </Auth>
