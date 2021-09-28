@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Projeto Connecta Dev
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Motivação
+- Treinar e fixar conceitos do react
+- Aprender sobre o framework material-ui ( bastante utilizado )
+- Fixar conhecimentos sobre context
+- Aprender sobre Redux
 
-## Available Scripts
+## Ferramentas e meios utilizados
+- Visual studio code
+- Heroku
+- Google Chrome
+- Youtube 
 
-In the project directory, you can run:
+## Bibliotecas e pacotes utilizados
+- react ( biblioteca core da aplicação )
+- redux ( Gerenciamento de estado )
+- react-router/react-router-dom ( gerenciar e manipular rotas e parametros)
+- react-feather ( fonte de icones )
+- react-dropzone ( biblioteca de arrastar e soltar arquivos )
+- react-markdown ( criar texto com formatações, baseado em uma linguagem de markdown, como por exemplo o do readme.md)
+- @material-ui/* framework ( framework com componentes e estilos prontos )
+- axios ( Http-client )
+- axios-mock-adapter ( mock com requisições )
+- history ( necessário para o funcionamento do react-router)
+- moment ( lib javascript para manipular data )
 
-### `npm start`
+## Conteúdo assimilado
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [X] Material-UI
+- [x] Context
+- [ ] Redux 
+- [x] Context
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Next step
+- Estudar + Redux
+- Estudar alguns react-hooks como (useMemo, useCallback, etc )
+- CSS modules
 
-### `npm test`
+## Referência
+https://www.youtube.com/watch?v=LGf2KJg20lg&t=31317s
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo
+https://connecta-dev-felipe.herokuapp.com/
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Como Testar?
+Como foi utilizado um mock-adapter para simular requisição de uma api, os dados são estáticos, então para testar toda a aplicação, é necessário utilizar as seguintes credenciais no login:
+- e-mail: felipejordan.alves@gmail.com
+- senha: admin
